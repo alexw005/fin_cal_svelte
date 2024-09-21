@@ -3,7 +3,7 @@
 </script>
 
 <header>
-	<nav class="flex items-center space-x-4 lg:space-x-6">
+	<nav class="flex items-center p-2 space-x-4 lg:space-x-6">
 		<a href="/" class="hover:text-primary text-lg font-medium transition-colors"> Home </a>
 
 		<a
