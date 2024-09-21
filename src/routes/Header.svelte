@@ -1,18 +1,16 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
-	import github from '$lib/images/github.svg';
 </script>
 
 <header>
-	<nav class="flex flex-row bg-gray-500">
-		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
-			</li>
-		</ul>
+	<nav class="flex items-center space-x-4 lg:space-x-6">
+		<a href="/" class="hover:text-primary text-lg font-medium transition-colors"> Home </a>
+
+		<a
+			href="/about"
+			class="text-muted-foreground hover:text-primary text-lg font-medium transition-colors"
+		>
+			About
+		</a>
 	</nav>
 </header>
