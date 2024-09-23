@@ -7,7 +7,7 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section class="flex flex-col items-center justify-center  min-h-screen p-8 gap-8">
+<section class="flex flex-col items-center justify-center  min-h-screen p-8 gap-8 bg-cyan-100">
 	<h1 class="text-4xl font-bold ">
 		Loan Calculator
 	</h1>
