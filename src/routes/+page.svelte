@@ -15,7 +15,6 @@
 	<h2>
 		Put the amount you want to borrow and the number of months you want to pay it back with the interest rate.
 	</h2>
-	<Counter />
 	<LoanCalculator />
 </section>
 
