@@ -9,10 +9,19 @@
     const number_of_payments =  $derived(loan_term * MONTHS_IN_YEAR);
     const x =  $derived(Math.pow(1 + monthly_interest, number_of_payments));
     const monthly_payment = $derived((loan_amount * x * monthly_interest) / (x - 1));
+
+    function validate ()  {
+        if (loan_amount <= 0 || loan_term <= 0 || interest <= 0) {
+            console.log('Please enter valid values');
+            return false;
+        }
+        return true;
+    }
+
 </script>
 
 <main>
-    <form>
+    <form onsubmit={validate}>
         <div class="flex flex-col">
             <label for="loan_amount">Loan Amount</label>
             <input type="number" min="1" required id="loan_amount" bind:value={loan_amount} />
