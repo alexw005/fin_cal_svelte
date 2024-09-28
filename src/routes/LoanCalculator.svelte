@@ -17,7 +17,7 @@
 	}
 </script>
 
-<main class="w-[32rem]">
+<main class="w-screen lg:w-[32rem]">
 	<form onsubmit={validate} class="max-w-md mx-0 shadow-md rounded-lg p-6">
 		<div class="flex flex-col gap-4">
 			<div>
