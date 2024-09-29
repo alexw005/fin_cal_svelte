@@ -17,9 +17,9 @@
 	}
 </script>
 
-<main class="w-screen lg:w-[32rem]">
-	<form onsubmit={validate} class="max-w-md mx-0 shadow-md rounded-lg p-6">
-		<div class="flex flex-col gap-4">
+<main class="w-full sm:w-[32rem] ">
+	<form onsubmit={validate} class="w-full mx-0 shadow-md rounded-lg">
+		<div class="flex flex-col gap-4 align-items-center">
 			<div>
 				<label for="loan_amount" class="block text-sm font-medium text-gray-700">Loan Amount</label>
 				<input
