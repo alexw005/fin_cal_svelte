@@ -1,5 +1,11 @@
 <script>
 	import { page } from '$app/stores';
+	let tabs = [
+    { name: 'Home', path: '/' },
+    { name: 'Loan', path: '/loan' },
+    { name: 'Tax', path: '/tax' }
+  ];
+  
 </script>
 
 <header>
