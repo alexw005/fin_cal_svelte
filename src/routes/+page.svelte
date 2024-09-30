@@ -1,11 +1,10 @@
 <script>
-	import Counter from './Counter.svelte';
 	import LoanCalculator from './LoanCalculator.svelte';
 </script>
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Financial calculator svelte app" />
 </svelte:head>
 
 <section class="flex flex-col items-center justify-center  h-screen p-8 gap-8 bg-cyan-100">
