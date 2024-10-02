@@ -5,9 +5,9 @@
     { name: 'Home', path: '/' },
     { name: 'Loan', path: '/' },
     { name: 'Tax', path: '/tax' }
-  ];
-  let currentRoute = $derived($page.url.pathname);
-  let showMenu = $state(false);
+	];
+	let currentRoute = $derived($page.url.pathname);
+	let showMenu = $state(false);
 
   
 </script>
