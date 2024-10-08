@@ -1,10 +1,11 @@
 <script>
 
 	import { page } from '$app/stores';
+	import Menu from '../icon/Menu.svelte';
 	let tabs = [
     { name: 'Home', path: '/' },
     { name: 'Loan', path: '/' },
-    { name: 'Tax', path: '/tax' }
+    // { name: 'Tax', path: '/tax' }
 	];
 	let currentRoute = $derived($page.url.pathname);
 	let showMenu = $state(false);
@@ -20,9 +21,13 @@
 				showMenu = true;
 			  }}
 			  aria-label="Open menu"
-			  class="lg:hidden font-bold text-2xl"
+			  class="font-bold text-md"
 			>
-			  {showMenu? 'X':'Menu'}
+			  {#if showMenu}
+				X
+			  {:else}
+				<Menu />
+			  {/if}
 			</button>
 		</div>
 		{#if showMenu}
@@ -32,7 +37,7 @@
 		onclick={() => {
 			showMenu = false;
 		}}
-		class="absolute inset-0 z-50 flex max-h-screen w-full justify-end overflow-hidden lg:hidden"
+		class="absolute inset-0 z-50 flex max-h-screen w-full justify-end overflow-hidden "
 		>
 			<div class="z-30 w-full bg-white/80  p-6 md:w-1/2 lg:w-1/3">
 				
